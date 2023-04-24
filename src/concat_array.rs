@@ -9,7 +9,7 @@ impl Solution {
             to_return[i] = nums[i];
             to_return[i + nums.len()] = nums[i];
         }
-        return to_return;
+        to_return
     }
 }
 pub struct Solution;
