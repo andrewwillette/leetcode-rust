@@ -48,7 +48,7 @@ impl ParkingSystem {
                 }
                 false
             }
-            _ => return false,
+            _ => false,
         }
     }
 }
