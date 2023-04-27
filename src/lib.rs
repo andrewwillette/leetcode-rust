@@ -1,5 +1,3 @@
-// #![feature(test)]
-// #![feature(proc_macro_hygiene)]
 pub mod build_array_from_perm;
 pub mod concat_array;
 pub mod kids_with_candies;
@@ -7,4 +5,7 @@ pub mod left_right_difference;
 pub mod longest_zig_zag;
 pub mod maximum_wealth;
 pub mod min_deci_parts;
+pub mod minimum_sum;
+pub mod most_words_found;
 pub mod parking_system;
+pub mod running_sum;

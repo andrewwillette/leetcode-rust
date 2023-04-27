@@ -44,7 +44,7 @@ mod tests {
     fn test_longest_zig_zag() {
         let mut tree = TreeNode::new(1);
         tree.left = Some(Rc::new(RefCell::new(TreeNode::new(1))));
-        let longest_zig_zag = Solution::longest_zig_zag(Some(Rc::new(RefCell::new(tree))));
+        let _longest_zig_zag = Solution::longest_zig_zag(Some(Rc::new(RefCell::new(tree))));
     }
 }
 

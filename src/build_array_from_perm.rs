@@ -1,8 +1,5 @@
+// https://leetcode.com/problems/build-array-from-permutation/
 impl Solution {
-    /*
-    # Leetcode problem # 1920
-    https://leetcode.com/problems/build-array-from-permutation/
-    */
     pub fn build_array(nums: Vec<i32>) -> Vec<i32> {
         (0..nums.len()).map(|i| nums[nums[i] as usize]).collect()
     }
