@@ -20,8 +20,42 @@ impl Solution {
                 }
             }
         }
-        0
+        let mut seen = vec![false; n];
+        let mut ret = 0;
+        for i in 0..n {
+            if seen[i] == false {
+                seen[i] = true;
+                ret += 1;
+                let mut q = vec![i];
+                while let Some(i) = q.pop() {
+                    for &j in &similar[i] {
+                        if seen[j] == false {
+                            seen[j] = true;
+                            q.push(j);
+                        }
+                    }
+                }
+            }
+        }
+        ret
     }
 }
 
 pub struct Solution;
+
+#[cfg(test)]
+mod tests {
+
+    #[test]
+    fn test_num_similar_groups() {
+        assert_eq!(
+            2,
+            super::Solution::num_similar_groups(vec![
+                "tars".to_string(),
+                "rats".to_string(),
+                "arts".to_string(),
+                "star".to_string()
+            ])
+        );
+    }
+}
