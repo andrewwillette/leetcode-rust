@@ -8,7 +8,8 @@ impl Solution {
             .collect();
         digits.sort_unstable();
         if let &[a, b, c, d] = &digits[..] {
-            (a * 10 + b * 10 + c + d) as i32
+            // use the smallest integers in 10 place
+            (a * 10 + c + b * 10 + d) as i32
         } else {
             unreachable!()
         }
