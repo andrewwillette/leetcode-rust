@@ -1,5 +1,6 @@
 pub mod build_array_from_perm;
 pub mod concat_array;
+pub mod deepest_leaves_sum;
 pub mod goal_parser_interpret;
 pub mod kids_with_candies;
 pub mod left_right_difference;
