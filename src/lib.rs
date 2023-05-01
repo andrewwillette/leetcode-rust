@@ -11,5 +11,6 @@ pub mod most_words_found;
 pub mod parking_system;
 pub mod running_sum;
 pub mod similar_strings;
+pub mod smaller_numbers_than_current;
 pub mod smallest_even_multiple;
 pub mod strictly_palindromic;
