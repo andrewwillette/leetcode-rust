@@ -22,10 +22,10 @@ impl TreeNode {
 
 // https://leetcode.com/problems/deepest-leaves-sum/
 impl Solution {
+    // find the first depth i where node is none, calculate sum at i - 1
     #[allow(dead_code)]
     pub fn deepest_leaves_sum(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
         for i in 0.. {
-            // find the first depth i where node is none, calculate sum at i - 1
             if Solution::get_node_at_depth(&root, i).is_none() {
                 return Solution::get_sum_at_depth(&root, i - 1);
             }
