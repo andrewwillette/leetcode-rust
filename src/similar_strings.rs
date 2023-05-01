@@ -23,13 +23,13 @@ impl Solution {
         let mut seen = vec![false; n];
         let mut ret = 0;
         for i in 0..n {
-            if seen[i] == false {
+            if !seen[i] {
                 seen[i] = true;
                 ret += 1;
                 let mut q = vec![i];
                 while let Some(i) = q.pop() {
                     for &j in &similar[i] {
-                        if seen[j] == false {
+                        if !seen[j] {
                             seen[j] = true;
                             q.push(j);
                         }

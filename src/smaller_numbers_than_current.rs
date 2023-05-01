@@ -5,8 +5,8 @@ impl Solution {
         let mut sorted: Vec<i32> = nums.clone();
         sorted.sort();
         for i in 0..nums.len() {
-            for j in 0..sorted.len() {
-                if nums[i] == sorted[j] {
+            for (j, sorted_val) in sorted.iter().enumerate() {
+                if nums[i] == *sorted_val {
                     result[i] = j as i32;
                     break;
                 }
