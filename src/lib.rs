@@ -16,5 +16,6 @@ pub mod running_sum;
 pub mod similar_strings;
 pub mod smaller_numbers_than_current;
 pub mod smallest_even_multiple;
+pub mod sort_integers_by_number_of_bits;
 pub mod strictly_palindromic;
 pub mod subtract_product_and_sum;
