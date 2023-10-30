@@ -1,27 +1,8 @@
 // https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits
 impl Solution {
-    pub fn sort_by_bits(arr: Vec<i32>) -> Vec<i32> {
-        println!("hi");
-        for i in arr.iter() {
-            println!("{:?}", i.to_be_bytes());
-            println!("{:?}", Self::count_set_bits(*i))
-        }
-        let zero_vec: Vec<i32> = Vec::with_capacity(1);
-        zero_vec
-    }
-
-    fn count_set_bits(value: i32) -> u32 {
-        let mut count = 0;
-        let mut num = value;
-
-        while num != 0 {
-            if num & 1 == 1 {
-                count += 1;
-            }
-            num >>= 1;
-        }
-
-        count
+    pub fn sort_by_bits(mut arr: Vec<i32>) -> Vec<i32> {
+        arr.sort_by_key(|&x| (x.count_ones(), x));
+        arr
     }
 }
 
