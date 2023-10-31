@@ -1,6 +1,7 @@
 pub mod build_array_from_perm;
 pub mod concat_array;
 pub mod deepest_leaves_sum;
+pub mod find_array_prefix;
 pub mod goal_parser_interpret;
 pub mod insert_greatest_common_divisors_in_list;
 pub mod kids_with_candies;

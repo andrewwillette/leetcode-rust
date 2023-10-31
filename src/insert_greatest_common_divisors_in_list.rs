@@ -12,7 +12,7 @@ impl ListNode {
     }
 }
 impl Solution {
-    pub fn insert_greatest_common_divisors(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+    pub fn insert_greatest_common_divisors(_head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
         let node = ListNode::new(5);
         Option::Some(Box::new(node))
     }
