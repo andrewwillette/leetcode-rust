@@ -1,4 +1,5 @@
 pub mod build_array_from_perm;
+pub mod build_array_with_stack_operations;
 pub mod concat_array;
 pub mod deepest_leaves_sum;
 pub mod find_array_prefix;
