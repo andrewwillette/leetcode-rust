@@ -5,6 +5,7 @@ pub mod find_array_prefix;
 pub mod goal_parser_interpret;
 pub mod insert_greatest_common_divisors_in_list;
 pub mod kids_with_candies;
+pub mod last_moment_before_ants_fall;
 pub mod left_right_difference;
 pub mod longest_zig_zag;
 pub mod max_achievable_number;
